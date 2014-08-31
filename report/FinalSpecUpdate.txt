@@ -1,0 +1,21 @@
+changes from final spec
+
+Schedule:
+Daniel got a concussion which left our team behind a week plus.
+Dan worked on the File I/O -> getting Wikipedia pages into oCaml in graph form.
+Jason and Dan worked on Graph module and LookupTable
+Jane worked on priority queue.
+Daniel and Jason wrote Dijkstra's and tested it, got all the code working.
+Dan made the video.
+Jason did the writeup.
+Dan edited the writeup and submitted the project.
+
+Interfaces:
+We never had a node interface.
+We instead had a StringKey module which basically wrapped string to pass into Map.Make functor.
+Our nodes were StringKey.t's (basically strings)
+We never sealed our Graph module so we never used our GRAPH signature.
+In Graph, neighbors was renamed get_neighbors and nodes was renamed get_nodes.
+We never saw a use for delete so we never implemented delete (it would have been hard, too).
+In Pqueue, add and take were renamed insert and remove.
+module Minheap was in fact sealed using PRIORITYQUEUE

@@ -1,0 +1,25 @@
+Instructions for compiling code:
+open DijkstrasWikipedia/code in terminal
+type "make"
+
+Instructions for getting datasets:
+They are large.
+166 mb: https://www.dropbox.com/s/08bq7o5dgzndig9/titleslinks.txt
+ 13 mb: https://www.dropbox.com/s/lek2xnm37kbrma9/nodes.txt
+Once you have saved these two files, you can run the code.
+
+Alternatively, you can download database dumps from http://dumps.wikimedia.org/
+Select the wiki you want and download the 2 files ending in "page.sql.gz" and "pagelinks.sql.gz"
+In the Appliance terminal, run
+mysql -pcrimson cs51 < extractedfile1.sql
+mysql -pcrimson cs51 < extractedfile2.sql
+mysql -pcrimson cs51 < titleslinks.sql > titleslinks.txt
+and
+mysql -pcrimson cs51 < nodes.sql > nodes.txt
+titleslinks.sql and nodes.sql can be found in data/
+
+Instructions for running code:
+Put dijkstras.native and the two .txt files in the same folder
+type ./dijkstras.native "string1" "string2" where the strings are the page titles that you want to find the path between.
+
+The end.

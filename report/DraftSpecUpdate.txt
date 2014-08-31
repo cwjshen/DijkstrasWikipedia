@@ -1,0 +1,7 @@
+changes from draft spec:
+
+We never got around to doing a Fibonacci Heap, but our algorithm seems to run fine with just a binary minheap splay tree.
+
+For the user interface, we did not make a website. Our program is run from the Appliance terminal. No editing of code is required to get it to run, although it does recreate the same graph every time it runs.
+
+None of the "cool extensions" were done.
